@@ -159,12 +159,16 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, addr
 
 #main h2 {
   	font-weight: normal;
-  	margin: 0.5em 0;
 }
 
 #main video {
 	width: 320px;
 	height: 240px;
+	margin: 0.5em 0;
+}
+
+#main p {
+	margin: 0.5em;
 }
 
 /* footer */
