@@ -35,7 +35,7 @@
     			<div class="container row">
         			<div class="col">
         				<div class="mask">
-        					<video poster="./img/funkturm.png" controls>
+        					<video class="slide" poster="./img/funkturm.png" width="280" height="210" preload controls>
           						<source src="./video/berlin.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
           					</video>
           				</div>
@@ -44,7 +44,7 @@
         			</div>
         			<div class="col">
         				<div class="mask">
-        	 				<video poster="./img/funkhaus.png" controls>
+        	 				<video class="slide" poster="./img/funkhaus.png" width="280" height="210" preload controls>
            						<source src="./video/berling.webm" type='video/webm; codecs="vp8, vorbis"' />
            					</video>
            				</div>
@@ -53,11 +53,11 @@
         			</div>
         			<div class="col">
         				<div class="mask">
-        	 				<video poster="./img/teufelsberg.png" controls>
+        	 				<video class="slide" poster="./img/teufelsberg.png" width="280" height="210" preload controls>
           						<source src="./video/berlin.ogv" type='video/ogg; codecs="theora, vorbis"' />
           					</video>
           				</div>
-          				<h2>Monitoring Station (ogg vorbis)</h2>
+          				<h2>Monitoring Station (ogg)</h2>
           				<p>The Teufelsberg is a mountain of rubble in western Berlin and the highest elevation of the urban area. On top there are the buildings of a former air surveillance and monitoring station of the U.S. armed forces.</p>
      			 	</div>
      			 </div>
@@ -68,6 +68,20 @@
         <script src="./js/vendor/jquery-1.10.2.min.js"></script>
         <script src="./js/plugins.js"></script>
         <script src="./js/main.js"></script>
+        
+<script>
+$(document).ready(function() {
+  var video = $(".slide");
+  video.click(function(e) {
+	if (video.paused) {
+      	video.play();
+    } 
+    else {
+      	video.pause();
+    }
+  });
+});
+</script>
 
     </body>
 </html>
