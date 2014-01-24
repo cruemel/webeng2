@@ -63,7 +63,9 @@
      			 </div>
       		</div>
 
-     		<div id="footer"></div>
+     		<div id="footer">
+     			<p class="container">P.s.: In every of the three different video formats the content is all the same.</p>
+     		</div>
 
         <script src="./js/vendor/jquery-1.10.2.min.js"></script>
         <script src="./js/plugins.js"></script>
@@ -72,7 +74,7 @@
 <script>
 $(document).ready(function() {
   var video = $(".slide");
-  video.click(function(e) {
+  video.click(function() {
 	if (video.paused) {
       	video.play();
     } 
