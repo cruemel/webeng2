@@ -2,7 +2,7 @@ Docroot - Web-Engineering, Teil 2.
 
 Unterordner:
 build - ant build script
-css - main und normlize.css
+css - eigenes css (main), sowie normlize.css
 img - bilder und grafiken
-js - skripte
+js - eigene skripte (main), sowie plugins und andere (/vendor)
 video - videos
